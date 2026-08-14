@@ -9,73 +9,24 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">
-      <div class="brand-mark">OC</div>
-      <div><strong>Oficina Club</strong><span>Peças, Serviços e Acessórios</span></div>
-    </div>
+    <div class="brand"><div class="brand-mark">OC</div><div><strong>Oficina Club</strong><span>Peças, Serviços e Acessórios</span></div></div>
     <button id="backupBtn" class="secondary">Exportar backup</button>
   </header>
-
   <nav class="nav" aria-label="Navegação principal">
-    <button class="nav-btn active" data-page="dashboard">Painel</button>
-    <button class="nav-btn" data-page="clientes">Clientes</button>
-    <button class="nav-btn" data-page="veiculos">Veículos</button>
-    <button class="nav-btn" data-page="produtos">Peças e serviços</button>
-    <button class="nav-btn" data-page="ordens">Ordens de serviço</button>
-    <button class="nav-btn" data-page="empresa">Empresa</button>
+    <button class="nav-btn active" data-page="dashboard">Painel</button><button class="nav-btn" data-page="clientes">Clientes</button><button class="nav-btn" data-page="veiculos">Veículos</button><button class="nav-btn" data-page="produtos">Peças e serviços</button><button class="nav-btn" data-page="ordens">Ordens de serviço</button><button class="nav-btn" data-page="empresa">Empresa</button>
   </nav>
-
   <main class="container">
-    <section id="dashboard" class="page active">
-      <div class="page-head"><div><h1>Painel</h1><p>Resumo operacional da Oficina Club.</p></div><button data-open-os class="primary">+ Nova OS</button></div>
-      <div class="cards">
-        <article class="card"><span>OS abertas</span><strong id="kpiAbertas">0</strong></article>
-        <article class="card"><span>Em execução</span><strong id="kpiExecucao">0</strong></article>
-        <article class="card"><span>Finalizadas</span><strong id="kpiFinalizadas">0</strong></article>
-        <article class="card"><span>Total em OS</span><strong id="kpiValor">R$ 0,00</strong></article>
-      </div>
-      <div class="panel"><h2>Ordens recentes</h2><div id="recentes"></div></div>
-    </section>
-
-    <section id="clientes" class="page">
-      <div class="page-head"><div><h1>Clientes</h1><p>Cadastro e contatos dos clientes.</p></div><button data-open="clienteDialog" class="primary">+ Cliente</button></div>
-      <div class="panel"><input id="buscaCliente" class="search" placeholder="Buscar por nome, telefone ou CPF/CNPJ" /><div id="listaClientes"></div></div>
-    </section>
-
-    <section id="veiculos" class="page">
-      <div class="page-head"><div><h1>Veículos</h1><p>Veículos vinculados aos clientes.</p></div><button data-open="veiculoDialog" class="primary">+ Veículo</button></div>
-      <div class="panel"><input id="buscaVeiculo" class="search" placeholder="Buscar por placa, marca ou modelo" /><div id="listaVeiculos"></div></div>
-    </section>
-
-    <section id="produtos" class="page">
-      <div class="page-head"><div><h1>Peças e serviços</h1><p>Catálogo, preços e estoque.</p></div><button data-open="produtoDialog" class="primary">+ Cadastrar</button></div>
-      <div class="panel"><input id="buscaProduto" class="search" placeholder="Buscar peça ou serviço" /><div id="listaProdutos"></div></div>
-    </section>
-
-    <section id="ordens" class="page">
-      <div class="page-head"><div><h1>Ordens de serviço</h1><p>Orçamentos, execução e entrega.</p></div><button data-open-os class="primary">+ Nova OS</button></div>
-      <div class="panel"><input id="buscaOS" class="search" placeholder="Buscar por número, cliente, placa ou status" /><div id="listaOS"></div></div>
-    </section>
-
-    <section id="empresa" class="page">
-      <div class="page-head"><div><h1>Empresa</h1><p>Dados exibidos nas ordens impressas.</p></div></div>
-      <form id="empresaForm" class="panel form-grid">
-        <label>Nome<input name="nome" required /></label><label>Descrição<input name="descricao" /></label>
-        <label>CNPJ<input name="cnpj" /></label><label>Telefone<input name="telefone" /></label>
-        <label>E-mail<input name="email" type="email" /></label><label>Cidade/UF<input name="cidade" /></label>
-        <label class="full">Endereço<input name="endereco" /></label><div class="full"><button class="primary">Salvar dados</button></div>
-      </form>
-    </section>
+    <section id="dashboard" class="page active"><div class="page-head"><div><h1>Painel</h1><p>Resumo operacional da Oficina Club.</p></div><button data-open-os class="primary">+ Nova OS</button></div><div class="cards"><article class="card"><span>OS abertas</span><strong id="kpiAbertas">0</strong></article><article class="card"><span>Em execução</span><strong id="kpiExecucao">0</strong></article><article class="card"><span>Finalizadas</span><strong id="kpiFinalizadas">0</strong></article><article class="card"><span>Total em OS</span><strong id="kpiValor">R$ 0,00</strong></article></div><div class="panel"><h2>Ordens recentes</h2><div id="recentes"></div></div></section>
+    <section id="clientes" class="page"><div class="page-head"><div><h1>Clientes</h1><p>Cadastro e contatos dos clientes.</p></div><button data-open="clienteDialog" class="primary">+ Cliente</button></div><div class="panel"><input id="buscaCliente" class="search" placeholder="Buscar por nome, telefone ou CPF/CNPJ" /><div id="listaClientes"></div></div></section>
+    <section id="veiculos" class="page"><div class="page-head"><div><h1>Veículos</h1><p>Veículos vinculados aos clientes.</p></div><button data-open="veiculoDialog" class="primary">+ Veículo</button></div><div class="panel"><input id="buscaVeiculo" class="search" placeholder="Buscar por placa, marca ou modelo" /><div id="listaVeiculos"></div></div></section>
+    <section id="produtos" class="page"><div class="page-head"><div><h1>Peças e serviços</h1><p>Catálogo, preços e estoque.</p></div><button data-open="produtoDialog" class="primary">+ Cadastrar</button></div><div class="panel"><input id="buscaProduto" class="search" placeholder="Buscar peça ou serviço" /><div id="listaProdutos"></div></div></section>
+    <section id="ordens" class="page"><div class="page-head"><div><h1>Ordens de serviço</h1><p>Orçamentos, execução e entrega.</p></div><button data-open-os class="primary">+ Nova OS</button></div><div class="panel"><input id="buscaOS" class="search" placeholder="Buscar por número, cliente, placa ou status" /><div id="listaOS"></div></div></section>
+    <section id="empresa" class="page"><div class="page-head"><div><h1>Empresa</h1><p>Dados exibidos nas ordens impressas.</p></div></div><form id="empresaForm" class="panel form-grid"><label>Nome<input name="nome" required /></label><label>Descrição<input name="descricao" /></label><label>CNPJ<input name="cnpj" /></label><label>Telefone<input name="telefone" /></label><label>E-mail<input name="email" type="email" /></label><label>Cidade/UF<input name="cidade" /></label><label class="full">Endereço<input name="endereco" /></label><div class="full"><button class="primary">Salvar dados</button></div></form></section>
   </main>
-
   <dialog id="clienteDialog"><form id="clienteForm" method="dialog"><div class="dialog-head"><h2>Novo cliente</h2><button type="button" data-close>×</button></div><div class="form-grid"><label>Nome<input name="nome" required /></label><label>CPF/CNPJ<input name="documento" /></label><label>Telefone/WhatsApp<input name="telefone" required /></label><label>E-mail<input name="email" type="email" /></label><label class="full">Endereço<input name="endereco" /></label></div><div class="actions"><button type="button" data-close class="secondary">Cancelar</button><button class="primary">Salvar</button></div></form></dialog>
-
   <dialog id="veiculoDialog"><form id="veiculoForm" method="dialog"><div class="dialog-head"><h2>Novo veículo</h2><button type="button" data-close>×</button></div><div class="form-grid"><label>Cliente<select name="clienteId" required></select></label><label>Placa<input name="placa" required maxlength="8" /></label><label>Marca<input name="marca" required /></label><label>Modelo<input name="modelo" required /></label><label>Ano<input name="ano" /></label><label>Cor<input name="cor" /></label><label>Combustível<input name="combustivel" /></label><label>Quilometragem<input name="km" type="number" min="0" /></label></div><div class="actions"><button type="button" data-close class="secondary">Cancelar</button><button class="primary">Salvar</button></div></form></dialog>
-
   <dialog id="produtoDialog"><form id="produtoForm" method="dialog"><div class="dialog-head"><h2>Nova peça ou serviço</h2><button type="button" data-close>×</button></div><div class="form-grid"><label>Tipo<select name="tipo"><option>Peça</option><option>Serviço</option></select></label><label>Código<input name="codigo" /></label><label class="full">Descrição<input name="descricao" required /></label><label>Preço de venda<input name="preco" type="number" min="0" step="0.01" required /></label><label>Estoque<input name="estoque" type="number" min="0" step="1" value="0" /></label></div><div class="actions"><button type="button" data-close class="secondary">Cancelar</button><button class="primary">Salvar</button></div></form></dialog>
-
-  <dialog id="osDialog" class="wide"><form id="osForm" method="dialog"><div class="dialog-head"><h2>Nova ordem de serviço</h2><button type="button" data-close>×</button></div><div class="form-grid"><label>Cliente<select name="clienteId" required></select></label><label>Veículo<select name="veiculoId" required></select></label><label>Status<select name="status"><option>Aberta</option><option>Em diagnóstico</option><option>Aguardando aprovação</option><option>Aprovada</option><option>Em execução</option><option>Finalizada</option><option>Entregue</option><option>Cancelada</option></select></label><label>Previsão<input name="previsao" type="date" /></label><label class="full">Reclamação do cliente<textarea name="reclamacao" required></textarea></label><label class="full">Diagnóstico / observações<textarea name="diagnostico"></textarea></label></div><h3>Itens</h3><div class="item-add"><select id="itemCatalogo"></select><input id="itemQtd" type="number" min="1" value="1" /><button id="addItem" type="button" class="secondary">Adicionar</button></div><div id="itensOS"></div><div class="totais"><strong>Total: <span id="totalOS">R$ 0,00</span></strong></div><div class="actions"><button type="button" data-close class="secondary">Cancelar</button><button class="primary">Emitir OS</button></div></form></dialog>
-
+  <dialog id="osDialog" class="wide"><form id="osForm" method="dialog"><div class="dialog-head"><h2>Nova ordem de serviço</h2><button type="button" data-close>×</button></div><p>Você pode selecionar um cadastro existente ou preencher os dados diretamente, sem cadastrar cliente ou placa.</p><div class="form-grid"><label>Cliente já cadastrado (opcional)<select name="clienteId"></select></label><label>Veículo já cadastrado (opcional)<select name="veiculoId"></select></label><label>Nome do cliente<input name="clienteNome" placeholder="Consumidor, nome ou empresa" /></label><label>Telefone<input name="clienteTelefone" placeholder="(16) 99999-9999" /></label><label>CPF/CNPJ<input name="clienteDocumento" /></label><label>Placa<input name="placaAvulsa" maxlength="8" placeholder="Opcional" /></label><label>Marca<input name="marcaAvulsa" placeholder="Opcional" /></label><label>Modelo / veículo<input name="modeloAvulso" placeholder="Ex.: Gol 1.6" /></label><label>Ano<input name="anoAvulso" /></label><label>Quilometragem<input name="kmAvulsa" type="number" min="0" /></label><label>Status<select name="status"><option>Aberta</option><option>Em diagnóstico</option><option>Aguardando aprovação</option><option>Aprovada</option><option>Em execução</option><option>Finalizada</option><option>Entregue</option><option>Cancelada</option></select></label><label>Previsão<input name="previsao" type="date" /></label><label class="full">Reclamação do cliente<textarea name="reclamacao" required></textarea></label><label class="full">Diagnóstico / observações<textarea name="diagnostico"></textarea></label></div><h3>Itens</h3><div class="item-add"><select id="itemCatalogo"></select><input id="itemQtd" type="number" min="1" value="1" /><button id="addItem" type="button" class="secondary">Adicionar</button></div><div id="itensOS"></div><div class="totais"><strong>Total: <span id="totalOS">R$ 0,00</span></strong></div><div class="actions"><button type="button" data-close class="secondary">Cancelar</button><button class="primary">Emitir OS</button></div></form></dialog>
   <script src="app.js"></script>
 </body>
 </html>
